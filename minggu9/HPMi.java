@@ -8,10 +8,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
-/**
- *
- * @author D2J-00
- */
+
 public class HPMi implements Phone {
     private int volume;
     private int battery;
@@ -20,8 +17,8 @@ public class HPMi implements Phone {
     public String number;
     
     public HPMi(){
-        this.volume = 99;
-        this.battery = 99;
+        this.volume = 37;
+        this.battery = 72;
         this.pulsa = 5980;
     }
     
@@ -41,14 +38,28 @@ public class HPMi implements Phone {
     
     @Override
     public void volumeUp() {
-        this.volume ++;
-        System.out.println("Volume sekarang: " + this.getVolume());
+        if (this.volume >= 0){
+            if (this.volume < 100) {
+                this.volume ++;
+                System.out.println("Volume sekarang: " + this.getVolume());
+            }
+            else if (this.volume == 100){
+                System.out.println("Volume sekarang: 100");
+            }
+        }
     }
     
     @Override
     public void volumeDown() {
-        this.volume --;
-        System.out.println("Volume sekarang: " + this.getVolume());
+        if (this.volume <= 100){
+            if (this.volume > 0) {
+                this.volume --;
+                System.out.println("Volume sekarang: " + this.getVolume());
+            }
+            else if (this.volume == 0){
+                System.out.println("Volume sekarang: 0");
+            }
+        }
     }
     
     public int getVolume() {
@@ -117,8 +128,9 @@ public class HPMi implements Phone {
     
     @Override
     public void topupPulsa(){
-        this.pulsa ++;
-        System.out.println("Pulsa sekarang: " + this.getPulsa());
+        this.pulsa +=10000;
+        System.out.println("Pulsa sekarang: " + this.getPulsa()
+        + "\nPulsa Anda bertambah 10000!");
     };
     
     public int getPulsa() {
@@ -132,8 +144,15 @@ public class HPMi implements Phone {
     
     @Override
     public void chargeBattery(){
-        this.battery ++;
-        System.out.println("Baterai sekarang: " + this.getBattery());
+        if (this.battery >= 0){
+            if (this.battery < 100) {
+                this.battery ++;
+                System.out.println("Baterai sekarang: " + this.getBattery());
+            }
+            else if (this.battery == 100){
+                System.out.println("Baterai sekarang: 100");
+            }
+        }
     };
     
     public int getBattery() {
