@@ -5,10 +5,7 @@
 package minggu9;
 import java.util.Scanner;
 
-/**
- *
- * @author D2J-00
- */
+
 public class RunningHP {
     public static void main(String [] args){
         int pilih;
@@ -56,7 +53,7 @@ public class RunningHP {
                             break;
                             
                         case 5:
-                            run.getPulsa();
+                            run.pulsa();
                             break;
                             
                         case 6:
