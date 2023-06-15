@@ -43,7 +43,7 @@
                       <Component id="txtUmur" pref="182" max="32767" attributes="0"/>
                   </Group>
                   <Component id="txtTiket" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
-                  <Component id="txtTotal" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtTotal" min="-2" pref="71" max="-2" attributes="0"/>
               </Group>
               <EmptySpace pref="200" max="32767" attributes="0"/>
           </Group>
@@ -72,7 +72,7 @@
                   <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="txtTotal" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="133" max="32767" attributes="0"/>
+              <EmptySpace pref="127" max="32767" attributes="0"/>
               <Component id="jButton1" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
           </Group>
@@ -124,9 +124,9 @@
         <Property name="text" type="java.lang.String" value="Total"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="txtTotal">
+    <Component class="javax.swing.JTextField" name="txtTotal">
       <Properties>
-        <Property name="text" type="java.lang.String" value="0"/>
+        <Property name="editable" type="boolean" value="false"/>
       </Properties>
     </Component>
   </SubComponents>

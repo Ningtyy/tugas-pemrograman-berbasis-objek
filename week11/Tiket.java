@@ -29,7 +29,7 @@ public class Tiket extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         txtTiket = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
-        txtTotal = new javax.swing.JLabel();
+        txtTotal = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -58,7 +58,7 @@ public class Tiket extends javax.swing.JFrame {
 
         jLabel4.setText("Total");
 
-        txtTotal.setText("0");
+        txtTotal.setEditable(false);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -81,7 +81,7 @@ public class Tiket extends javax.swing.JFrame {
                         .addComponent(txtNama)
                         .addComponent(txtUmur, javax.swing.GroupLayout.DEFAULT_SIZE, 182, Short.MAX_VALUE))
                     .addComponent(txtTiket, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtTotal))
+                    .addComponent(txtTotal, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(200, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -102,8 +102,8 @@ public class Tiket extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4)
-                    .addComponent(txtTotal))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 133, Short.MAX_VALUE)
+                    .addComponent(txtTotal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 127, Short.MAX_VALUE)
                 .addComponent(jButton1)
                 .addGap(20, 20, 20))
         );
@@ -199,7 +199,7 @@ public class Tiket extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JTextField txtNama;
     private javax.swing.JTextField txtTiket;
-    private javax.swing.JLabel txtTotal;
+    private javax.swing.JTextField txtTotal;
     private javax.swing.JTextField txtUmur;
     // End of variables declaration//GEN-END:variables
 }
